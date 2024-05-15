@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8627F0DA2BF34DEE00AB69D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0D92BF34DEE00AB69D7 /* AppDelegate.m */; };
+		8627F0E32BF34DEE00AB69D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8627F0E12BF34DEE00AB69D7 /* Main.storyboard */; };
+		8627F0E52BF34DEF00AB69D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8627F0E42BF34DEF00AB69D7 /* Assets.xcassets */; };
+		8627F0E82BF34DEF00AB69D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8627F0E62BF34DEF00AB69D7 /* LaunchScreen.storyboard */; };
+		8627F0EB2BF34DEF00AB69D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0EA2BF34DEF00AB69D7 /* main.m */; };
+		8627F1782BF3535E00AB69D7 /* BDConfigDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0F32BF3535E00AB69D7 /* BDConfigDataService.m */; };
+		8627F1792BF3535E00AB69D7 /* FaceViewController+LiveCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0F62BF3535E00AB69D7 /* FaceViewController+LiveCheck.m */; };
+		8627F17A2BF3535E00AB69D7 /* FaceViewController+MainSteps.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0F72BF3535E00AB69D7 /* FaceViewController+MainSteps.m */; };
+		8627F17B2BF3535E00AB69D7 /* FaceViewController+FaceCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0FB2BF3535E00AB69D7 /* FaceViewController+FaceCollect.m */; };
+		8627F17C2BF3535E00AB69D7 /* BDBaseCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F0FF2BF3535E00AB69D7 /* BDBaseCalculateTool.m */; };
+		8627F17D2BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1002BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.m */; };
+		8627F17E2BF3535E00AB69D7 /* BDBaseToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1022BF3535E00AB69D7 /* BDBaseToastView.m */; };
+		8627F17F2BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1062BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.m */; };
+		8627F1802BF3535E00AB69D7 /* BDFaceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1082BF3535E00AB69D7 /* BDFaceAlertView.m */; };
+		8627F1812BF3535E00AB69D7 /* BDFaceAdjustParamsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F10C2BF3535E00AB69D7 /* BDFaceAdjustParamsTool.m */; };
+		8627F1822BF3535E00AB69D7 /* BDFaceAdjustParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F10E2BF3535E00AB69D7 /* BDFaceAdjustParamsController.m */; };
+		8627F1832BF3535E00AB69D7 /* BDFaceLiveSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F10F2BF3535E00AB69D7 /* BDFaceLiveSelectViewController.m */; };
+		8627F1842BF3535E00AB69D7 /* BDFaceAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1102BF3535E00AB69D7 /* BDFaceAlertController.m */; };
+		8627F1852BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1112BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.m */; };
+		8627F1862BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1122BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.m */; };
+		8627F1872BF3535E00AB69D7 /* BDFaceSelectConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1142BF3535E00AB69D7 /* BDFaceSelectConfigController.m */; };
+		8627F1882BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1152BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.m */; };
+		8627F1892BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F11A2BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.m */; };
+		8627F18A2BF3535E00AB69D7 /* BDFaceSelectConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1202BF3535E00AB69D7 /* BDFaceSelectConfigModel.m */; };
+		8627F18B2BF3535E00AB69D7 /* BDFaceAdjustParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1212BF3535E00AB69D7 /* BDFaceAdjustParamsModel.m */; };
+		8627F18C2BF3535E00AB69D7 /* BDFaceAdjustParamsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1222BF3535E00AB69D7 /* BDFaceAdjustParamsItem.m */; };
+		8627F18D2BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1232BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.m */; };
+		8627F18E2BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1242BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.m */; };
+		8627F18F2BF3535E00AB69D7 /* BDFaceSelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1252BF3535E00AB69D7 /* BDFaceSelectItem.m */; };
+		8627F1902BF3535E00AB69D7 /* BDFaceAdjustParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1262BF3535E00AB69D7 /* BDFaceAdjustParams.m */; };
+		8627F1912BF3535E00AB69D7 /* BDFaceAdjustParamsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1302BF3535E00AB69D7 /* BDFaceAdjustParamsCell.m */; };
+		8627F1922BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1312BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.m */; };
+		8627F1932BF3535E00AB69D7 /* BDFaceSelectConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1332BF3535E00AB69D7 /* BDFaceSelectConfigCell.m */; };
+		8627F1942BF3535E00AB69D7 /* BDFaceSelectRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1342BF3535E00AB69D7 /* BDFaceSelectRadio.m */; };
+		8627F1952BF3535E00AB69D7 /* BDFaceLivingConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1372BF3535E00AB69D7 /* BDFaceLivingConfigViewController.m */; };
+		8627F1962BF3535E00AB69D7 /* BDFaceVerificationFailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1392BF3535E00AB69D7 /* BDFaceVerificationFailController.m */; };
+		8627F1972BF3535E00AB69D7 /* BDFaceVerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F13C2BF3535E00AB69D7 /* BDFaceVerificationController.m */; };
+		8627F1982BF3535E00AB69D7 /* BDFaceVerificationConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F13E2BF3535E00AB69D7 /* BDFaceVerificationConstant.m */; };
+		8627F1992BF3535E00AB69D7 /* BDFaceVerificationSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1412BF3535E00AB69D7 /* BDFaceVerificationSuccessController.m */; };
+		8627F19A2BF3535E00AB69D7 /* BDFaceAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1422BF3535E00AB69D7 /* BDFaceAgreementViewController.m */; };
+		8627F19B2BF3535E00AB69D7 /* BDFacePoorNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1442BF3535E00AB69D7 /* BDFacePoorNetworkController.m */; };
+		8627F19C2BF3535E00AB69D7 /* BDFaceImageResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1482BF3535E00AB69D7 /* BDFaceImageResult.m */; };
+		8627F19D2BF3535E00AB69D7 /* BDFaceLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1492BF3535E00AB69D7 /* BDFaceLogoView.m */; };
+		8627F19E2BF3535E00AB69D7 /* JSToastDialogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F14B2BF3535E00AB69D7 /* JSToastDialogs.m */; };
+		8627F19F2BF3535E00AB69D7 /* BDFaceSDKObjectChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1522BF3535E00AB69D7 /* BDFaceSDKObjectChecker.m */; };
+		8627F1A02BF3535E00AB69D7 /* VerifyRegexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1532BF3535E00AB69D7 /* VerifyRegexTool.m */; };
+		8627F1A12BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1552BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.m */; };
+		8627F1A22BF3535E00AB69D7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1582BF3535E00AB69D7 /* Reachability.m */; };
+		8627F1A32BF3535E00AB69D7 /* BDConfigFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F15C2BF3535E00AB69D7 /* BDConfigFileParser.m */; };
+		8627F1A42BF3535E00AB69D7 /* com.baidu.idl.face.live.action.image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8627F15E2BF3535E00AB69D7 /* com.baidu.idl.face.live.action.image.bundle */; };
+		8627F1A52BF3535E00AB69D7 /* idl-key.face-ios in Resources */ = {isa = PBXBuildFile; fileRef = 8627F15F2BF3535E00AB69D7 /* idl-key.face-ios */; };
+		8627F1A62BF3535E00AB69D7 /* idl-license.face-ios in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1602BF3535E00AB69D7 /* idl-license.face-ios */; };
+		8627F1A72BF3535E00AB69D7 /* BDFaceBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627F1612BF3535E00AB69D7 /* BDFaceBaseKit.framework */; };
+		8627F1A82BF3535E00AB69D7 /* com.baidu.idl.face.model.faceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1622BF3535E00AB69D7 /* com.baidu.idl.face.model.faceSDK.bundle */; };
+		8627F1A92BF3535E00AB69D7 /* custom.conf in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1632BF3535E00AB69D7 /* custom.conf */; };
+		8627F1AA2BF3535E00AB69D7 /* com.baidu.idl.face.faceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1642BF3535E00AB69D7 /* com.baidu.idl.face.faceSDK.bundle */; };
+		8627F1AB2BF3535E00AB69D7 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1652BF3535E00AB69D7 /* aip.license */; };
+		8627F1AC2BF3535E00AB69D7 /* BDFaceLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627F1672BF3535E00AB69D7 /* BDFaceLogicLayer.framework */; };
+		8627F1AD2BF3535E00AB69D7 /* BDIDInfoCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F16C2BF3535E00AB69D7 /* BDIDInfoCollectController.m */; };
+		8627F1AE2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F16D2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.m */; };
+		8627F1AF2BF3535E00AB69D7 /* CollectInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1722BF3535E00AB69D7 /* CollectInfo.storyboard */; };
+		8627F1B02BF3535E00AB69D7 /* ShootingRequireView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8627F1732BF3535E00AB69D7 /* ShootingRequireView.xib */; };
+		8627F1B12BF3535E00AB69D7 /* BDShootingRequireView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1752BF3535E00AB69D7 /* BDShootingRequireView.m */; };
+		8627F1B22BF3535E00AB69D7 /* BDCardInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1772BF3535E00AB69D7 /* BDCardInfoService.m */; };
+		8627F1B52BF3544D00AB69D7 /* FaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8627F1B42BF3544D00AB69D7 /* FaceViewController.m */; };
+		8627F1B92BF36A9D00AB69D7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627F1B82BF36A9D00AB69D7 /* libc++.tbd */; };
+		8627F1BB2BF36AA800AB69D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627F1BA2BF36AA800AB69D7 /* libz.tbd */; };
+		8627F1BD2BF36AC100AB69D7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8627F1BC2BF36AC100AB69D7 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8627F0D52BF34DEE00AB69D7 /* BaiduOcrFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduOcrFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8627F0D82BF34DEE00AB69D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8627F0D92BF34DEE00AB69D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8627F0E22BF34DEE00AB69D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8627F0E42BF34DEF00AB69D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8627F0E72BF34DEF00AB69D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8627F0E92BF34DEF00AB69D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8627F0EA2BF34DEF00AB69D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8627F0F32BF3535E00AB69D7 /* BDConfigDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDConfigDataService.m; sourceTree = "<group>"; };
+		8627F0F42BF3535E00AB69D7 /* BDConfigDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDConfigDataService.h; sourceTree = "<group>"; };
+		8627F0F62BF3535E00AB69D7 /* FaceViewController+LiveCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FaceViewController+LiveCheck.m"; sourceTree = "<group>"; };
+		8627F0F72BF3535E00AB69D7 /* FaceViewController+MainSteps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FaceViewController+MainSteps.m"; sourceTree = "<group>"; };
+		8627F0F82BF3535E00AB69D7 /* FaceViewController+FaceCollect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FaceViewController+FaceCollect.h"; sourceTree = "<group>"; };
+		8627F0F92BF3535E00AB69D7 /* FaceViewController+MainSteps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FaceViewController+MainSteps.h"; sourceTree = "<group>"; };
+		8627F0FA2BF3535E00AB69D7 /* FaceViewController+LiveCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FaceViewController+LiveCheck.h"; sourceTree = "<group>"; };
+		8627F0FB2BF3535E00AB69D7 /* FaceViewController+FaceCollect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FaceViewController+FaceCollect.m"; sourceTree = "<group>"; };
+		8627F0FF2BF3535E00AB69D7 /* BDBaseCalculateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBaseCalculateTool.m; sourceTree = "<group>"; };
+		8627F1002BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BDFaceColorUtils.m"; sourceTree = "<group>"; };
+		8627F1012BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BDPresentingAnimation.h"; sourceTree = "<group>"; };
+		8627F1022BF3535E00AB69D7 /* BDBaseToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBaseToastView.m; sourceTree = "<group>"; };
+		8627F1032BF3535E00AB69D7 /* BDFaceAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAlertView.h; sourceTree = "<group>"; };
+		8627F1042BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BDFaceColorUtils.h"; sourceTree = "<group>"; };
+		8627F1052BF3535E00AB69D7 /* BDBaseCalculateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBaseCalculateTool.h; sourceTree = "<group>"; };
+		8627F1062BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BDPresentingAnimation.m"; sourceTree = "<group>"; };
+		8627F1072BF3535E00AB69D7 /* BDBaseToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBaseToastView.h; sourceTree = "<group>"; };
+		8627F1082BF3535E00AB69D7 /* BDFaceAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAlertView.m; sourceTree = "<group>"; };
+		8627F10B2BF3535E00AB69D7 /* BDFaceAdjustParamsTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsTool.h; sourceTree = "<group>"; };
+		8627F10C2BF3535E00AB69D7 /* BDFaceAdjustParamsTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsTool.m; sourceTree = "<group>"; };
+		8627F10E2BF3535E00AB69D7 /* BDFaceAdjustParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsController.m; sourceTree = "<group>"; };
+		8627F10F2BF3535E00AB69D7 /* BDFaceLiveSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceLiveSelectViewController.m; sourceTree = "<group>"; };
+		8627F1102BF3535E00AB69D7 /* BDFaceAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAlertController.m; sourceTree = "<group>"; };
+		8627F1112BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceLiveSelectItemViewController.m; sourceTree = "<group>"; };
+		8627F1122BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsRootController.m; sourceTree = "<group>"; };
+		8627F1132BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceInterfaceSelectViewController.h; sourceTree = "<group>"; };
+		8627F1142BF3535E00AB69D7 /* BDFaceSelectConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSelectConfigController.m; sourceTree = "<group>"; };
+		8627F1152BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceLiveItemDetailsViewController.m; sourceTree = "<group>"; };
+		8627F1162BF3535E00AB69D7 /* BDFaceLiveSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceLiveSelectViewController.h; sourceTree = "<group>"; };
+		8627F1172BF3535E00AB69D7 /* BDFaceAdjustParamsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsController.h; sourceTree = "<group>"; };
+		8627F1182BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceLiveSelectItemViewController.h; sourceTree = "<group>"; };
+		8627F1192BF3535E00AB69D7 /* BDFaceAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAlertController.h; sourceTree = "<group>"; };
+		8627F11A2BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceInterfaceSelectViewController.m; sourceTree = "<group>"; };
+		8627F11B2BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsRootController.h; sourceTree = "<group>"; };
+		8627F11C2BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceLiveItemDetailsViewController.h; sourceTree = "<group>"; };
+		8627F11D2BF3535E00AB69D7 /* BDFaceSelectConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSelectConfigController.h; sourceTree = "<group>"; };
+		8627F11F2BF3535E00AB69D7 /* BDFaceAdjustParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParams.h; sourceTree = "<group>"; };
+		8627F1202BF3535E00AB69D7 /* BDFaceSelectConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSelectConfigModel.m; sourceTree = "<group>"; };
+		8627F1212BF3535E00AB69D7 /* BDFaceAdjustParamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsModel.m; sourceTree = "<group>"; };
+		8627F1222BF3535E00AB69D7 /* BDFaceAdjustParamsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsItem.m; sourceTree = "<group>"; };
+		8627F1232BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsConstants.m; sourceTree = "<group>"; };
+		8627F1242BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsFileManager.m; sourceTree = "<group>"; };
+		8627F1252BF3535E00AB69D7 /* BDFaceSelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSelectItem.m; sourceTree = "<group>"; };
+		8627F1262BF3535E00AB69D7 /* BDFaceAdjustParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParams.m; sourceTree = "<group>"; };
+		8627F1272BF3535E00AB69D7 /* BDFaceSelectConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSelectConfigModel.h; sourceTree = "<group>"; };
+		8627F1282BF3535E00AB69D7 /* BDFaceAdjustParamsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsItem.h; sourceTree = "<group>"; };
+		8627F1292BF3535E00AB69D7 /* BDFaceAdjustParamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsModel.h; sourceTree = "<group>"; };
+		8627F12A2BF3535E00AB69D7 /* BDFaceSelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSelectItem.h; sourceTree = "<group>"; };
+		8627F12B2BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsFileManager.h; sourceTree = "<group>"; };
+		8627F12C2BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsConstants.h; sourceTree = "<group>"; };
+		8627F12E2BF3535E00AB69D7 /* BDFaceSelectRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSelectRadio.h; sourceTree = "<group>"; };
+		8627F12F2BF3535E00AB69D7 /* BDFaceSelectConfigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSelectConfigCell.h; sourceTree = "<group>"; };
+		8627F1302BF3535E00AB69D7 /* BDFaceAdjustParamsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsCell.m; sourceTree = "<group>"; };
+		8627F1312BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAdjustParamsRootCell.m; sourceTree = "<group>"; };
+		8627F1322BF3535E00AB69D7 /* BDFaceAdjustParamsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsCell.h; sourceTree = "<group>"; };
+		8627F1332BF3535E00AB69D7 /* BDFaceSelectConfigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSelectConfigCell.m; sourceTree = "<group>"; };
+		8627F1342BF3535E00AB69D7 /* BDFaceSelectRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSelectRadio.m; sourceTree = "<group>"; };
+		8627F1352BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAdjustParamsRootCell.h; sourceTree = "<group>"; };
+		8627F1372BF3535E00AB69D7 /* BDFaceLivingConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceLivingConfigViewController.m; sourceTree = "<group>"; };
+		8627F1382BF3535E00AB69D7 /* BDFaceVerificationSuccessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceVerificationSuccessController.h; sourceTree = "<group>"; };
+		8627F1392BF3535E00AB69D7 /* BDFaceVerificationFailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceVerificationFailController.m; sourceTree = "<group>"; };
+		8627F13A2BF3535E00AB69D7 /* BDFaceVerificationConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceVerificationConstant.h; sourceTree = "<group>"; };
+		8627F13B2BF3535E00AB69D7 /* BDFaceAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceAgreementViewController.h; sourceTree = "<group>"; };
+		8627F13C2BF3535E00AB69D7 /* BDFaceVerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceVerificationController.m; sourceTree = "<group>"; };
+		8627F13D2BF3535E00AB69D7 /* BDFacePoorNetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFacePoorNetworkController.h; sourceTree = "<group>"; };
+		8627F13E2BF3535E00AB69D7 /* BDFaceVerificationConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceVerificationConstant.m; sourceTree = "<group>"; };
+		8627F13F2BF3535E00AB69D7 /* BDFaceVerificationFailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceVerificationFailController.h; sourceTree = "<group>"; };
+		8627F1402BF3535E00AB69D7 /* BDFaceLivingConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceLivingConfigViewController.h; sourceTree = "<group>"; };
+		8627F1412BF3535E00AB69D7 /* BDFaceVerificationSuccessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceVerificationSuccessController.m; sourceTree = "<group>"; };
+		8627F1422BF3535E00AB69D7 /* BDFaceAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceAgreementViewController.m; sourceTree = "<group>"; };
+		8627F1432BF3535E00AB69D7 /* BDFaceVerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceVerificationController.h; sourceTree = "<group>"; };
+		8627F1442BF3535E00AB69D7 /* BDFacePoorNetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFacePoorNetworkController.m; sourceTree = "<group>"; };
+		8627F1462BF3535E00AB69D7 /* BDFaceLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceLogoView.h; sourceTree = "<group>"; };
+		8627F1472BF3535E00AB69D7 /* JSToastDialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSToastDialogs.h; sourceTree = "<group>"; };
+		8627F1482BF3535E00AB69D7 /* BDFaceImageResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceImageResult.m; sourceTree = "<group>"; };
+		8627F1492BF3535E00AB69D7 /* BDFaceLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceLogoView.m; sourceTree = "<group>"; };
+		8627F14A2BF3535E00AB69D7 /* BDFaceImageResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceImageResult.h; sourceTree = "<group>"; };
+		8627F14B2BF3535E00AB69D7 /* JSToastDialogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSToastDialogs.m; sourceTree = "<group>"; };
+		8627F14C2BF3535E00AB69D7 /* FaceParameterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceParameterConfig.h; sourceTree = "<group>"; };
+		8627F14F2BF3535E00AB69D7 /* BDUIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDUIConstant.h; sourceTree = "<group>"; };
+		8627F1502BF3535E00AB69D7 /* BDFaceSDKObjectChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceSDKObjectChecker.h; sourceTree = "<group>"; };
+		8627F1512BF3535E00AB69D7 /* VerifyRegexTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyRegexTool.h; sourceTree = "<group>"; };
+		8627F1522BF3535E00AB69D7 /* BDFaceSDKObjectChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceSDKObjectChecker.m; sourceTree = "<group>"; };
+		8627F1532BF3535E00AB69D7 /* VerifyRegexTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyRegexTool.m; sourceTree = "<group>"; };
+		8627F1552BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDFaceVideoCaptureDevice.m; sourceTree = "<group>"; };
+		8627F1562BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFaceVideoCaptureDevice.h; sourceTree = "<group>"; };
+		8627F1582BF3535E00AB69D7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8627F1592BF3535E00AB69D7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8627F15B2BF3535E00AB69D7 /* BDConfigFileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDConfigFileParser.h; sourceTree = "<group>"; };
+		8627F15C2BF3535E00AB69D7 /* BDConfigFileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDConfigFileParser.m; sourceTree = "<group>"; };
+		8627F15E2BF3535E00AB69D7 /* com.baidu.idl.face.live.action.image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.live.action.image.bundle; sourceTree = "<group>"; };
+		8627F15F2BF3535E00AB69D7 /* idl-key.face-ios */ = {isa = PBXFileReference; lastKnownFileType = file; path = "idl-key.face-ios"; sourceTree = "<group>"; };
+		8627F1602BF3535E00AB69D7 /* idl-license.face-ios */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "idl-license.face-ios"; sourceTree = "<group>"; };
+		8627F1612BF3535E00AB69D7 /* BDFaceBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDFaceBaseKit.framework; sourceTree = "<group>"; };
+		8627F1622BF3535E00AB69D7 /* com.baidu.idl.face.model.faceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.model.faceSDK.bundle; sourceTree = "<group>"; };
+		8627F1632BF3535E00AB69D7 /* custom.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom.conf; sourceTree = "<group>"; };
+		8627F1642BF3535E00AB69D7 /* com.baidu.idl.face.faceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.faceSDK.bundle; sourceTree = "<group>"; };
+		8627F1652BF3535E00AB69D7 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
+		8627F1672BF3535E00AB69D7 /* BDFaceLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDFaceLogicLayer.framework; sourceTree = "<group>"; };
+		8627F1692BF3535E00AB69D7 /* BDCardInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCardInfoService.h; sourceTree = "<group>"; };
+		8627F16B2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDIDInfoAutoCollectController.h; sourceTree = "<group>"; };
+		8627F16C2BF3535E00AB69D7 /* BDIDInfoCollectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDIDInfoCollectController.m; sourceTree = "<group>"; };
+		8627F16D2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDIDInfoAutoCollectController.m; sourceTree = "<group>"; };
+		8627F16E2BF3535E00AB69D7 /* BDIDInfoCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDIDInfoCollectController.h; sourceTree = "<group>"; };
+		8627F1702BF3535E00AB69D7 /* BDIDInfoCollectConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDIDInfoCollectConstant.h; sourceTree = "<group>"; };
+		8627F1722BF3535E00AB69D7 /* CollectInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectInfo.storyboard; sourceTree = "<group>"; };
+		8627F1732BF3535E00AB69D7 /* ShootingRequireView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShootingRequireView.xib; sourceTree = "<group>"; };
+		8627F1752BF3535E00AB69D7 /* BDShootingRequireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDShootingRequireView.m; sourceTree = "<group>"; };
+		8627F1762BF3535E00AB69D7 /* BDShootingRequireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDShootingRequireView.h; sourceTree = "<group>"; };
+		8627F1772BF3535E00AB69D7 /* BDCardInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCardInfoService.m; sourceTree = "<group>"; };
+		8627F1B32BF3544D00AB69D7 /* FaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
+		8627F1B42BF3544D00AB69D7 /* FaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceViewController.m; sourceTree = "<group>"; };
+		8627F1B62BF368AB00AB69D7 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8627F1B82BF36A9D00AB69D7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8627F1BA2BF36AA800AB69D7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8627F1BC2BF36AC100AB69D7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8627F0D22BF34DEE00AB69D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8627F1BD2BF36AC100AB69D7 /* CoreTelephony.framework in Frameworks */,
+				8627F1BB2BF36AA800AB69D7 /* libz.tbd in Frameworks */,
+				8627F1B92BF36A9D00AB69D7 /* libc++.tbd in Frameworks */,
+				8627F1AC2BF3535E00AB69D7 /* BDFaceLogicLayer.framework in Frameworks */,
+				8627F1A72BF3535E00AB69D7 /* BDFaceBaseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8627F0CC2BF34DEE00AB69D7 = {
+			isa = PBXGroup;
+			children = (
+				8627F0D72BF34DEE00AB69D7 /* BaiduOcrFaceDemo */,
+				8627F0D62BF34DEE00AB69D7 /* Products */,
+				8627F1B72BF36A9D00AB69D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8627F0D62BF34DEE00AB69D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0D52BF34DEE00AB69D7 /* BaiduOcrFaceDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8627F0D72BF34DEE00AB69D7 /* BaiduOcrFaceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0D82BF34DEE00AB69D7 /* AppDelegate.h */,
+				8627F0D92BF34DEE00AB69D7 /* AppDelegate.m */,
+				8627F1B32BF3544D00AB69D7 /* FaceViewController.h */,
+				8627F1B42BF3544D00AB69D7 /* FaceViewController.m */,
+				8627F1B62BF368AB00AB69D7 /* config.h */,
+				8627F0F12BF3535E00AB69D7 /* BaiduFace */,
+				8627F0E12BF34DEE00AB69D7 /* Main.storyboard */,
+				8627F0E42BF34DEF00AB69D7 /* Assets.xcassets */,
+				8627F0E62BF34DEF00AB69D7 /* LaunchScreen.storyboard */,
+				8627F0E92BF34DEF00AB69D7 /* Info.plist */,
+				8627F0EA2BF34DEF00AB69D7 /* main.m */,
+			);
+			path = BaiduOcrFaceDemo;
+			sourceTree = "<group>";
+		};
+		8627F0F12BF3535E00AB69D7 /* BaiduFace */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0F22BF3535E00AB69D7 /* BDDataService */,
+				8627F0F52BF3535E00AB69D7 /* Category */,
+				8627F0FC2BF3535E00AB69D7 /* BDFaceFaceSDKUI */,
+				8627F15A2BF3535E00AB69D7 /* BDConfig */,
+				8627F15D2BF3535E00AB69D7 /* BDFaceSDK */,
+				8627F1662BF3535E00AB69D7 /* Frameworks */,
+				8627F1682BF3535E00AB69D7 /* BDOCR */,
+			);
+			path = BaiduFace;
+			sourceTree = "<group>";
+		};
+		8627F0F22BF3535E00AB69D7 /* BDDataService */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0F32BF3535E00AB69D7 /* BDConfigDataService.m */,
+				8627F0F42BF3535E00AB69D7 /* BDConfigDataService.h */,
+			);
+			path = BDDataService;
+			sourceTree = "<group>";
+		};
+		8627F0F52BF3535E00AB69D7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0F62BF3535E00AB69D7 /* FaceViewController+LiveCheck.m */,
+				8627F0F72BF3535E00AB69D7 /* FaceViewController+MainSteps.m */,
+				8627F0F92BF3535E00AB69D7 /* FaceViewController+MainSteps.h */,
+				8627F0FA2BF3535E00AB69D7 /* FaceViewController+LiveCheck.h */,
+				8627F0F82BF3535E00AB69D7 /* FaceViewController+FaceCollect.h */,
+				8627F0FB2BF3535E00AB69D7 /* FaceViewController+FaceCollect.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8627F0FC2BF3535E00AB69D7 /* BDFaceFaceSDKUI */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0FD2BF3535E00AB69D7 /* UI */,
+				8627F14C2BF3535E00AB69D7 /* FaceParameterConfig.h */,
+				8627F14D2BF3535E00AB69D7 /* Public */,
+			);
+			path = BDFaceFaceSDKUI;
+			sourceTree = "<group>";
+		};
+		8627F0FD2BF3535E00AB69D7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0FE2BF3535E00AB69D7 /* BDFaceTools */,
+				8627F1092BF3535E00AB69D7 /* BDFaceAdjustParams */,
+				8627F1362BF3535E00AB69D7 /* Controller */,
+				8627F1452BF3535E00AB69D7 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8627F0FE2BF3535E00AB69D7 /* BDFaceTools */ = {
+			isa = PBXGroup;
+			children = (
+				8627F0FF2BF3535E00AB69D7 /* BDBaseCalculateTool.m */,
+				8627F1002BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.m */,
+				8627F1012BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.h */,
+				8627F1022BF3535E00AB69D7 /* BDBaseToastView.m */,
+				8627F1032BF3535E00AB69D7 /* BDFaceAlertView.h */,
+				8627F1042BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.h */,
+				8627F1052BF3535E00AB69D7 /* BDBaseCalculateTool.h */,
+				8627F1062BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.m */,
+				8627F1072BF3535E00AB69D7 /* BDBaseToastView.h */,
+				8627F1082BF3535E00AB69D7 /* BDFaceAlertView.m */,
+			);
+			path = BDFaceTools;
+			sourceTree = "<group>";
+		};
+		8627F1092BF3535E00AB69D7 /* BDFaceAdjustParams */ = {
+			isa = PBXGroup;
+			children = (
+				8627F10A2BF3535E00AB69D7 /* Interface */,
+				8627F10D2BF3535E00AB69D7 /* Controller */,
+				8627F11E2BF3535E00AB69D7 /* Model */,
+				8627F12D2BF3535E00AB69D7 /* View */,
+			);
+			path = BDFaceAdjustParams;
+			sourceTree = "<group>";
+		};
+		8627F10A2BF3535E00AB69D7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8627F10B2BF3535E00AB69D7 /* BDFaceAdjustParamsTool.h */,
+				8627F10C2BF3535E00AB69D7 /* BDFaceAdjustParamsTool.m */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8627F10D2BF3535E00AB69D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8627F10E2BF3535E00AB69D7 /* BDFaceAdjustParamsController.m */,
+				8627F10F2BF3535E00AB69D7 /* BDFaceLiveSelectViewController.m */,
+				8627F1102BF3535E00AB69D7 /* BDFaceAlertController.m */,
+				8627F1112BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.m */,
+				8627F1122BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.m */,
+				8627F1132BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.h */,
+				8627F1142BF3535E00AB69D7 /* BDFaceSelectConfigController.m */,
+				8627F1152BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.m */,
+				8627F1162BF3535E00AB69D7 /* BDFaceLiveSelectViewController.h */,
+				8627F1172BF3535E00AB69D7 /* BDFaceAdjustParamsController.h */,
+				8627F1182BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.h */,
+				8627F1192BF3535E00AB69D7 /* BDFaceAlertController.h */,
+				8627F11A2BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.m */,
+				8627F11B2BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.h */,
+				8627F11C2BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.h */,
+				8627F11D2BF3535E00AB69D7 /* BDFaceSelectConfigController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8627F11E2BF3535E00AB69D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8627F11F2BF3535E00AB69D7 /* BDFaceAdjustParams.h */,
+				8627F1202BF3535E00AB69D7 /* BDFaceSelectConfigModel.m */,
+				8627F1212BF3535E00AB69D7 /* BDFaceAdjustParamsModel.m */,
+				8627F1222BF3535E00AB69D7 /* BDFaceAdjustParamsItem.m */,
+				8627F1232BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.m */,
+				8627F1242BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.m */,
+				8627F1252BF3535E00AB69D7 /* BDFaceSelectItem.m */,
+				8627F1262BF3535E00AB69D7 /* BDFaceAdjustParams.m */,
+				8627F1272BF3535E00AB69D7 /* BDFaceSelectConfigModel.h */,
+				8627F1282BF3535E00AB69D7 /* BDFaceAdjustParamsItem.h */,
+				8627F1292BF3535E00AB69D7 /* BDFaceAdjustParamsModel.h */,
+				8627F12A2BF3535E00AB69D7 /* BDFaceSelectItem.h */,
+				8627F12B2BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.h */,
+				8627F12C2BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8627F12D2BF3535E00AB69D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8627F12E2BF3535E00AB69D7 /* BDFaceSelectRadio.h */,
+				8627F12F2BF3535E00AB69D7 /* BDFaceSelectConfigCell.h */,
+				8627F1302BF3535E00AB69D7 /* BDFaceAdjustParamsCell.m */,
+				8627F1312BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.m */,
+				8627F1322BF3535E00AB69D7 /* BDFaceAdjustParamsCell.h */,
+				8627F1332BF3535E00AB69D7 /* BDFaceSelectConfigCell.m */,
+				8627F1342BF3535E00AB69D7 /* BDFaceSelectRadio.m */,
+				8627F1352BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8627F1362BF3535E00AB69D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1372BF3535E00AB69D7 /* BDFaceLivingConfigViewController.m */,
+				8627F1382BF3535E00AB69D7 /* BDFaceVerificationSuccessController.h */,
+				8627F1392BF3535E00AB69D7 /* BDFaceVerificationFailController.m */,
+				8627F13A2BF3535E00AB69D7 /* BDFaceVerificationConstant.h */,
+				8627F13B2BF3535E00AB69D7 /* BDFaceAgreementViewController.h */,
+				8627F13C2BF3535E00AB69D7 /* BDFaceVerificationController.m */,
+				8627F13D2BF3535E00AB69D7 /* BDFacePoorNetworkController.h */,
+				8627F13E2BF3535E00AB69D7 /* BDFaceVerificationConstant.m */,
+				8627F13F2BF3535E00AB69D7 /* BDFaceVerificationFailController.h */,
+				8627F1402BF3535E00AB69D7 /* BDFaceLivingConfigViewController.h */,
+				8627F1412BF3535E00AB69D7 /* BDFaceVerificationSuccessController.m */,
+				8627F1422BF3535E00AB69D7 /* BDFaceAgreementViewController.m */,
+				8627F1432BF3535E00AB69D7 /* BDFaceVerificationController.h */,
+				8627F1442BF3535E00AB69D7 /* BDFacePoorNetworkController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8627F1452BF3535E00AB69D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1462BF3535E00AB69D7 /* BDFaceLogoView.h */,
+				8627F1472BF3535E00AB69D7 /* JSToastDialogs.h */,
+				8627F1482BF3535E00AB69D7 /* BDFaceImageResult.m */,
+				8627F1492BF3535E00AB69D7 /* BDFaceLogoView.m */,
+				8627F14A2BF3535E00AB69D7 /* BDFaceImageResult.h */,
+				8627F14B2BF3535E00AB69D7 /* JSToastDialogs.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8627F14D2BF3535E00AB69D7 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8627F14E2BF3535E00AB69D7 /* Util */,
+				8627F1542BF3535E00AB69D7 /* Common */,
+				8627F1572BF3535E00AB69D7 /* NetManager */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8627F14E2BF3535E00AB69D7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8627F14F2BF3535E00AB69D7 /* BDUIConstant.h */,
+				8627F1502BF3535E00AB69D7 /* BDFaceSDKObjectChecker.h */,
+				8627F1512BF3535E00AB69D7 /* VerifyRegexTool.h */,
+				8627F1522BF3535E00AB69D7 /* BDFaceSDKObjectChecker.m */,
+				8627F1532BF3535E00AB69D7 /* VerifyRegexTool.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8627F1542BF3535E00AB69D7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1552BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.m */,
+				8627F1562BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8627F1572BF3535E00AB69D7 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1582BF3535E00AB69D7 /* Reachability.m */,
+				8627F1592BF3535E00AB69D7 /* Reachability.h */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		8627F15A2BF3535E00AB69D7 /* BDConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8627F15B2BF3535E00AB69D7 /* BDConfigFileParser.h */,
+				8627F15C2BF3535E00AB69D7 /* BDConfigFileParser.m */,
+			);
+			path = BDConfig;
+			sourceTree = "<group>";
+		};
+		8627F15D2BF3535E00AB69D7 /* BDFaceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8627F15E2BF3535E00AB69D7 /* com.baidu.idl.face.live.action.image.bundle */,
+				8627F15F2BF3535E00AB69D7 /* idl-key.face-ios */,
+				8627F1602BF3535E00AB69D7 /* idl-license.face-ios */,
+				8627F1612BF3535E00AB69D7 /* BDFaceBaseKit.framework */,
+				8627F1622BF3535E00AB69D7 /* com.baidu.idl.face.model.faceSDK.bundle */,
+				8627F1632BF3535E00AB69D7 /* custom.conf */,
+				8627F1642BF3535E00AB69D7 /* com.baidu.idl.face.faceSDK.bundle */,
+				8627F1652BF3535E00AB69D7 /* aip.license */,
+			);
+			path = BDFaceSDK;
+			sourceTree = "<group>";
+		};
+		8627F1662BF3535E00AB69D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1672BF3535E00AB69D7 /* BDFaceLogicLayer.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		8627F1682BF3535E00AB69D7 /* BDOCR */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1692BF3535E00AB69D7 /* BDCardInfoService.h */,
+				8627F16A2BF3535E00AB69D7 /* Controller */,
+				8627F16F2BF3535E00AB69D7 /* Model */,
+				8627F1712BF3535E00AB69D7 /* View */,
+				8627F1772BF3535E00AB69D7 /* BDCardInfoService.m */,
+			);
+			path = BDOCR;
+			sourceTree = "<group>";
+		};
+		8627F16A2BF3535E00AB69D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8627F16B2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.h */,
+				8627F16C2BF3535E00AB69D7 /* BDIDInfoCollectController.m */,
+				8627F16D2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.m */,
+				8627F16E2BF3535E00AB69D7 /* BDIDInfoCollectController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8627F16F2BF3535E00AB69D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1702BF3535E00AB69D7 /* BDIDInfoCollectConstant.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8627F1712BF3535E00AB69D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1722BF3535E00AB69D7 /* CollectInfo.storyboard */,
+				8627F1732BF3535E00AB69D7 /* ShootingRequireView.xib */,
+				8627F1742BF3535E00AB69D7 /* resource */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8627F1742BF3535E00AB69D7 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1752BF3535E00AB69D7 /* BDShootingRequireView.m */,
+				8627F1762BF3535E00AB69D7 /* BDShootingRequireView.h */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		8627F1B72BF36A9D00AB69D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8627F1BC2BF36AC100AB69D7 /* CoreTelephony.framework */,
+				8627F1BA2BF36AA800AB69D7 /* libz.tbd */,
+				8627F1B82BF36A9D00AB69D7 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8627F0D42BF34DEE00AB69D7 /* BaiduOcrFaceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8627F0EE2BF34DEF00AB69D7 /* Build configuration list for PBXNativeTarget "BaiduOcrFaceDemo" */;
+			buildPhases = (
+				8627F0D12BF34DEE00AB69D7 /* Sources */,
+				8627F0D22BF34DEE00AB69D7 /* Frameworks */,
+				8627F0D32BF34DEE00AB69D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaiduOcrFaceDemo;
+			productName = BaiduOcrFaceDemo;
+			productReference = 8627F0D52BF34DEE00AB69D7 /* BaiduOcrFaceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8627F0CD2BF34DEE00AB69D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8627F0D42BF34DEE00AB69D7 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8627F0D02BF34DEE00AB69D7 /* Build configuration list for PBXProject "BaiduOcrFaceDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8627F0CC2BF34DEE00AB69D7;
+			productRefGroup = 8627F0D62BF34DEE00AB69D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8627F0D42BF34DEE00AB69D7 /* BaiduOcrFaceDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8627F0D32BF34DEE00AB69D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8627F1A42BF3535E00AB69D7 /* com.baidu.idl.face.live.action.image.bundle in Resources */,
+				8627F1AF2BF3535E00AB69D7 /* CollectInfo.storyboard in Resources */,
+				8627F1A52BF3535E00AB69D7 /* idl-key.face-ios in Resources */,
+				8627F1A92BF3535E00AB69D7 /* custom.conf in Resources */,
+				8627F1A62BF3535E00AB69D7 /* idl-license.face-ios in Resources */,
+				8627F1AB2BF3535E00AB69D7 /* aip.license in Resources */,
+				8627F1AA2BF3535E00AB69D7 /* com.baidu.idl.face.faceSDK.bundle in Resources */,
+				8627F0E82BF34DEF00AB69D7 /* LaunchScreen.storyboard in Resources */,
+				8627F1A82BF3535E00AB69D7 /* com.baidu.idl.face.model.faceSDK.bundle in Resources */,
+				8627F0E52BF34DEF00AB69D7 /* Assets.xcassets in Resources */,
+				8627F0E32BF34DEE00AB69D7 /* Main.storyboard in Resources */,
+				8627F1B02BF3535E00AB69D7 /* ShootingRequireView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8627F0D12BF34DEE00AB69D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8627F19E2BF3535E00AB69D7 /* JSToastDialogs.m in Sources */,
+				8627F1802BF3535E00AB69D7 /* BDFaceAlertView.m in Sources */,
+				8627F0DA2BF34DEE00AB69D7 /* AppDelegate.m in Sources */,
+				8627F1842BF3535E00AB69D7 /* BDFaceAlertController.m in Sources */,
+				8627F1B52BF3544D00AB69D7 /* FaceViewController.m in Sources */,
+				8627F1832BF3535E00AB69D7 /* BDFaceLiveSelectViewController.m in Sources */,
+				8627F1892BF3535E00AB69D7 /* BDFaceInterfaceSelectViewController.m in Sources */,
+				8627F19D2BF3535E00AB69D7 /* BDFaceLogoView.m in Sources */,
+				8627F18A2BF3535E00AB69D7 /* BDFaceSelectConfigModel.m in Sources */,
+				8627F1962BF3535E00AB69D7 /* BDFaceVerificationFailController.m in Sources */,
+				8627F1822BF3535E00AB69D7 /* BDFaceAdjustParamsController.m in Sources */,
+				8627F1972BF3535E00AB69D7 /* BDFaceVerificationController.m in Sources */,
+				8627F0EB2BF34DEF00AB69D7 /* main.m in Sources */,
+				8627F17B2BF3535E00AB69D7 /* FaceViewController+FaceCollect.m in Sources */,
+				8627F1792BF3535E00AB69D7 /* FaceViewController+LiveCheck.m in Sources */,
+				8627F1912BF3535E00AB69D7 /* BDFaceAdjustParamsCell.m in Sources */,
+				8627F1852BF3535E00AB69D7 /* BDFaceLiveSelectItemViewController.m in Sources */,
+				8627F1B22BF3535E00AB69D7 /* BDCardInfoService.m in Sources */,
+				8627F17D2BF3535E00AB69D7 /* UIColor+BDFaceColorUtils.m in Sources */,
+				8627F18F2BF3535E00AB69D7 /* BDFaceSelectItem.m in Sources */,
+				8627F1922BF3535E00AB69D7 /* BDFaceAdjustParamsRootCell.m in Sources */,
+				8627F1A32BF3535E00AB69D7 /* BDConfigFileParser.m in Sources */,
+				8627F1B12BF3535E00AB69D7 /* BDShootingRequireView.m in Sources */,
+				8627F19B2BF3535E00AB69D7 /* BDFacePoorNetworkController.m in Sources */,
+				8627F1A12BF3535E00AB69D7 /* BDFaceVideoCaptureDevice.m in Sources */,
+				8627F1862BF3535E00AB69D7 /* BDFaceAdjustParamsRootController.m in Sources */,
+				8627F18C2BF3535E00AB69D7 /* BDFaceAdjustParamsItem.m in Sources */,
+				8627F19C2BF3535E00AB69D7 /* BDFaceImageResult.m in Sources */,
+				8627F19A2BF3535E00AB69D7 /* BDFaceAgreementViewController.m in Sources */,
+				8627F1942BF3535E00AB69D7 /* BDFaceSelectRadio.m in Sources */,
+				8627F1982BF3535E00AB69D7 /* BDFaceVerificationConstant.m in Sources */,
+				8627F17C2BF3535E00AB69D7 /* BDBaseCalculateTool.m in Sources */,
+				8627F1882BF3535E00AB69D7 /* BDFaceLiveItemDetailsViewController.m in Sources */,
+				8627F1AD2BF3535E00AB69D7 /* BDIDInfoCollectController.m in Sources */,
+				8627F1932BF3535E00AB69D7 /* BDFaceSelectConfigCell.m in Sources */,
+				8627F18E2BF3535E00AB69D7 /* BDFaceAdjustParamsFileManager.m in Sources */,
+				8627F1902BF3535E00AB69D7 /* BDFaceAdjustParams.m in Sources */,
+				8627F17F2BF3535E00AB69D7 /* UIViewController+BDPresentingAnimation.m in Sources */,
+				8627F1952BF3535E00AB69D7 /* BDFaceLivingConfigViewController.m in Sources */,
+				8627F1992BF3535E00AB69D7 /* BDFaceVerificationSuccessController.m in Sources */,
+				8627F17E2BF3535E00AB69D7 /* BDBaseToastView.m in Sources */,
+				8627F18D2BF3535E00AB69D7 /* BDFaceAdjustParamsConstants.m in Sources */,
+				8627F17A2BF3535E00AB69D7 /* FaceViewController+MainSteps.m in Sources */,
+				8627F1A02BF3535E00AB69D7 /* VerifyRegexTool.m in Sources */,
+				8627F1A22BF3535E00AB69D7 /* Reachability.m in Sources */,
+				8627F1782BF3535E00AB69D7 /* BDConfigDataService.m in Sources */,
+				8627F19F2BF3535E00AB69D7 /* BDFaceSDKObjectChecker.m in Sources */,
+				8627F1AE2BF3535E00AB69D7 /* BDIDInfoAutoCollectController.m in Sources */,
+				8627F1812BF3535E00AB69D7 /* BDFaceAdjustParamsTool.m in Sources */,
+				8627F1872BF3535E00AB69D7 /* BDFaceSelectConfigController.m in Sources */,
+				8627F18B2BF3535E00AB69D7 /* BDFaceAdjustParamsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8627F0E12BF34DEE00AB69D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8627F0E22BF34DEE00AB69D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8627F0E62BF34DEF00AB69D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8627F0E72BF34DEF00AB69D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8627F0EC2BF34DEF00AB69D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8627F0ED2BF34DEF00AB69D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8627F0EF2BF34DEF00AB69D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAV6W2VMHT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduOcrFaceDemo/BaiduFace/BDFaceSDK",
+					"$(PROJECT_DIR)/BaiduOcrFaceDemo/BaiduFace/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaiduOcrFaceDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "请求使用相机";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.dlwqb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8627F0F02BF34DEF00AB69D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAV6W2VMHT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduOcrFaceDemo/BaiduFace/BDFaceSDK",
+					"$(PROJECT_DIR)/BaiduOcrFaceDemo/BaiduFace/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaiduOcrFaceDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "请求使用相机";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.dlwqb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8627F0D02BF34DEE00AB69D7 /* Build configuration list for PBXProject "BaiduOcrFaceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8627F0EC2BF34DEF00AB69D7 /* Debug */,
+				8627F0ED2BF34DEF00AB69D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8627F0EE2BF34DEF00AB69D7 /* Build configuration list for PBXNativeTarget "BaiduOcrFaceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8627F0EF2BF34DEF00AB69D7 /* Debug */,
+				8627F0F02BF34DEF00AB69D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8627F0CD2BF34DEE00AB69D7 /* Project object */;
+}
